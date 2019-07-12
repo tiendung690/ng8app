@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1 appSimple [forColor]="'green'" [brColor]="'red'">
+    Welcome to {{ title }}!
+  </h1>
+  <app-home></app-home>
+  <app-admin-dashboard></app-admin-dashboard>
+  <app-customer-dashboard></app-customer-dashboard>
+  <div>
+    {{textarea}} - {{checkbox}} - {{selectoption}}
+  </div>
+  <input type="text" [(ngModel)] ="title">
+  <textarea name="" id="" cols="30" rows="10" [(ngModel)] = "textarea"></textarea>
+  <input type="checkbox" name="" id="" [(ngModel)] = "checkbox"/>
+  <select name="" id="" [(ngModel)] = "selectoption">
+      <option > Value 1</option>
+      <option value="2"> Value 2</option>
+      <option value="3"> Value 3</option>
+      <option value="4"> Value 4</option>
+  </select>
+</div>
